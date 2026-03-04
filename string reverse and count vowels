@@ -1,0 +1,7 @@
+str = "hello"
+str_rev = str[::-1]
+count = 0
+print(str_rev)
+for s in str:
+    if s in "aeiouAEIOU":
+        count += 1
