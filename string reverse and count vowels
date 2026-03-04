@@ -5,3 +5,4 @@ print(str_rev)
 for s in str:
     if s in "aeiouAEIOU":
         count += 1
+print(count)
