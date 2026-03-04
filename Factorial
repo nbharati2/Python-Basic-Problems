@@ -1,0 +1,20 @@
+#Factorial using loop
+def factorial(n):
+    result = 1
+    for i in range(1, n + 1):
+        result *= i
+    return result
+
+print(factorial(3))
+
+#Factorial using recursion
+#if we dont mention n==1 then it gives error
+def factorial(n):
+   # Base case: factorial of 0 or 1 is 1
+   if n == 0 or n == 1:
+       return 1
+   # Recursive case: n * factorial of (n-1)
+   return n * factorial(n - 1)
+# Test the function
+num = 5
+print(f"Factorial of {num} is {factorial(num)}")
