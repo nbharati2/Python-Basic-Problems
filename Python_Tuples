@@ -1,0 +1,53 @@
+#Python Tuples - Ordered ,immutable ,mixed datatype,zero based index
+
+programming_languages = ('Python', 'Java', 'C++', 'Rust')
+#programming_languages[0] = 'JavaScript' - Trows Error
+
+developer = ('Alice', 34, 'Rust Developer')
+print(developer[1]) # 34
+
+numbers = (1, 2, 3, 4, 5)
+numbers[-2] # 4
+
+developer = 'Jessica'
+print(tuple(developer))
+
+programming_languages = ('Python', 'Java', 'C++', 'Rust')
+
+print('Rust' in programming_languages) # True
+print('JavaScript' in programming_languages) # False
+
+developer = ('Alice', 34, 'Rust Developer')
+name, age, job = developer
+print(name, age, job)
+name, *rest = developer
+print(name,  *rest)
+
+desserts = ('cake', 'pie', 'cookies', 'ice cream')
+desserts[1:3] # ('pie', 'cookies')
+
+#developer = ('Jane Doe', 23, 'Python Developer')
+#del developer[1]
+
+#Tuple Methods
+programming_languages = ('Rust', 'Java', 'Python', 'C++', 'Rust')
+programming_languages.count('Rust') # 2
+programming_languages.count('JavaScript') # 0
+
+programming_languages = ('Rust', 'Java', 'Python', 'C++', 'Rust', 'Python')
+programming_languages.index('Python', 3) # 5
+
+
+programming_languages = ('Rust', 'Java', 'Python', 'C++', 'Rust', 'Python', 'JavaScript', 'Python')
+programming_languages.index('Python', 2, 5) # 2
+
+numbers = (13, 2, 78, 3, 45, 67, 18, 7)
+sorted(numbers) # [2, 3, 7, 13, 18, 45, 67, 78]
+
+'''Modifying Sorting Behavior: You can customize the sorting behavior for an iterable using the optional reverse and key arguments. Here is an example of using the key argument to sort items in a tuple by length:'''
+programming_languages = ('Rust', 'Java', 'Python', 'C++', 'Rust', 'Python')
+sorted(programming_languages, key=len)
+
+programming_languages = ('Rust', 'Java', 'Python', 'C++', 'Rust', 'Python')
+
+print(sorted(programming_languages, reverse=True))
