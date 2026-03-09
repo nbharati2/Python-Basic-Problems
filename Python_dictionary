@@ -1,0 +1,33 @@
+#Dictionaries - Equivant to map in Scala
+# dictionary = {
+#     key1: value1,
+#     key2: value2
+# }
+dict = {
+    1:"hi",
+    2:"hello"
+}
+print(dict)
+pizza = {
+    'name': 'Margherita Pizza',
+    'price': 8.9,
+    'calories_per_slice': 250,
+    'toppings': ['mozzarella', 'basil']
+}
+
+print(pizza['name'])
+print(pizza.get('toppings', []))
+print(pizza.keys())
+print(pizza.values())
+print(pizza.items())
+print(pizza.pop('price', 10))
+pizza.update({ 'price': 15, 'total_time': 25 })
+print(pizza.items())
+for key,val in pizza.items():
+     print(val,key)
+     
+for no in enumerate(pizza):
+    print(no)
+    
+for index, no in enumerate(pizza.items(), 1):
+    print(index, no)
