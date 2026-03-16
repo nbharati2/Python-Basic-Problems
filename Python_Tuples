@@ -1,4 +1,7 @@
 #Python Tuples - Ordered ,immutable ,mixed datatype,zero based index
+#Immutability: Useful when you want to ensure data doesn’t change.
+#Hashable: Tuples can be used as keys in dictionaries, lists cannot.
+#Performance: Slightly faster than lists due to immutability.
 
 programming_languages = ('Python', 'Java', 'C++', 'Rust')
 #programming_languages[0] = 'JavaScript' - Trows Error
