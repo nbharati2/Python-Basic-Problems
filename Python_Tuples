@@ -51,6 +51,11 @@ sorted(numbers) # [2, 3, 7, 13, 18, 45, 67, 78]
 programming_languages = ('Rust', 'Java', 'Python', 'C++', 'Rust', 'Python')
 sorted(programming_languages, key=len)
 
+#Write a program to unpack the following tuple into four variables and display each variable.
+tuple1 = (10, 20, 30, 40)
+a,b,c,d = tuple1
+print(a,b,c,d)
+
 programming_languages = ('Rust', 'Java', 'Python', 'C++', 'Rust', 'Python')
 
 print(sorted(programming_languages, reverse=True))
