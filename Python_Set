@@ -1,0 +1,11 @@
+#5. Given a Python list, Write a program to add all its elements into a given set.
+sample_set = {"Yellow", "Orange", "Black"}
+sample_set1 = {"Yellow", "Orange", "Black"}
+sample_list = ["Blue", "Green", "Red"]
+
+for sample in sample_list:
+    sample_set.add(sample)
+print(sample_set)
+print(sample_list)
+sample_set1.update(sample_list)
+print(sample_set1)
