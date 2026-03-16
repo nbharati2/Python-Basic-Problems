@@ -91,3 +91,16 @@ def dup_check(input_list):
     return result
         
 print(dup_check(input_list))
+
+##Given string contains a combination of the lower and upper case letters. Write a program to arrange the characters of a string so that all lowercase letters should come first.
+str1 = "PyNaTive"
+#Expected Output: yaivePNT
+lower = []
+upper = []
+for chr in str1:
+    if chr.islower():
+        lower.append(chr)
+    else:
+        upper.append(chr)
+    result = "".join(lower+upper)
+print(result)
