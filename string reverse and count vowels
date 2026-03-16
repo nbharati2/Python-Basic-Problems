@@ -6,3 +6,16 @@ for s in str:
     if s in "aeiouAEIOU":
         count += 1
 print(count)
+
+
+#3. Write a function `count_vowels(s)` that takes a string `s` and returns the number of vowels (`a`, `e`, `i`, `o`, `u`) in it.
+
+def vowels(word):
+    count = 0
+    for chr in word:
+        if chr in "aeiouAEIOU":
+            #count = count + 1
+            count += 1
+    return count
+    
+print(vowels("Hihihi"))
