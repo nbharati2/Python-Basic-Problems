@@ -74,3 +74,20 @@ print(numbers) # [1, 2, 3, 4, 5, 6]
 
 programming_languages = ['Rust', 'Java', 'Python', 'C++']
 programming_languages.index('Java') # 1
+
+
+#Create a list squares which has the squares of the numbers in i.
+input_list = [4, 5, 2, 4, 2, 3, 5, 1]
+
+squares = [n**2 for n in input_list]
+print(squares)
+
+#You are given a list of integers. Your task is to remove all duplicate values and return a list with only unique elements, preserving the original order.
+def dup_check(input_list):
+    result = []
+    for num in input_list:
+       if num not in result:
+            result.append(num)
+    return result
+        
+print(dup_check(input_list))
