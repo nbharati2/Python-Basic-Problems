@@ -104,3 +104,17 @@ for chr in str1:
         upper.append(chr)
     result = "".join(lower+upper)
 print(result)
+
+#Write a Python function called find_common_elements that takes in two lists of integers as input and returns a new list containing the common elements between the two input lists. If there are no common elements, the function should return an empty list. Your task is to implement this function and test it with sample inputs.
+ 
+# Test cases
+list1 = [1, 2, 3, 4, 5]
+list2 = [4, 5, 6, 7, 8]
+def find_common_elements(list1, list2):
+    result = []
+    for num in list1:
+        if num in list2:
+            result.append(num)
+    return result
+        
+print("Common elements:", find_common_elements(list1, list2))  # Output should be [4, 5]
