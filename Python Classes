@@ -1,0 +1,2 @@
+#In Python, the __init__ method is a special method known as the initializer method, which is called when you create a new instance of the class
+#The self parameter is a standard way to refer to the instance of the class and is required as the first parameter for all instance methods in a class.
